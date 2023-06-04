@@ -158,9 +158,9 @@ body, html {
 }
 
 .about {
-  max-width: 941px;
+  max-width: 940px;
   min-height: 344px;
-  margin: 59px 0px 0px 247.5px;
+  margin: 59px auto 0px;
 }
 .about__title {
   position: relative;
@@ -173,7 +173,7 @@ body, html {
   color: #48555B;
   text-transform: uppercase;
   padding-top: 1px;
-  margin: 0px 0px 0px 412.5px;
+  margin: 0px 0px 0px 411px;
 }
 .about__title::before {
   content: "";
@@ -185,7 +185,7 @@ body, html {
   background-color: #00A4E5;
 }
 .about__block-bot {
-  margin: 69px 0px 0px 2px;
+  margin: 69px 0px 0px 0px;
 }
 
 .block-bot {
@@ -228,7 +228,7 @@ body, html {
 }
 .block-bot__column_one {
   background-image: url(../img/about-img-one.png);
-  margin-right: 20px;
+  margin-right: 19px;
 }
 .block-bot__column_two {
   background-image: url(../img/about-img-two.png);

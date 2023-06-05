@@ -5,27 +5,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap'); // font-family: 'Open Sans', sans-serif;
 
 body, html {
-    width: 1440px;
-    height: 2810px;
-    margin: 0px auto;
+    height: 100px;
+}
+
+//-----------------------------------------------------------------------
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: content-box;
 }
 
 //-----------------------------------------------------------------------
 
 .header {
-    height: 768px;
+    min-height: 768px;
     background-image: url(../img/header-bg.jpg);
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     &__logo {
-        padding: 40px 0px 0px 668px;
+        display: block;
+        width: 103px;
+        padding: 40px 0px 0px 0px;
+        margin: 0px auto;
     }
 
     &__text-center {
         width: 612px;
         height: 94px;
         text-align: center;
-        margin: 311px 0px 0px 421px;
+        margin: 311px 0px 0px 170px;
+        
         h1 {
             font-family: 'Bebas Neue', cursive;
             font-weight: 400;
@@ -51,26 +64,32 @@ body, html {
         letter-spacing: 3.7px;
         color: #FFFFFF;
         text-transform: uppercase;
-        margin: 216px 0px 0px 662px;
+        margin: 216px 0px 0px 412px;
     }
 }
 
 //-----------------------------------------------------------------------
 
 .navbar {
-    height: 65px;
-    display: flex;
+    min-height: 63px;
     border-top: 1px solid #E6E6E6;
     border-bottom: 1px solid #E6E6E6;
+    box-sizing: content-box;
+
+    &__wrap {
+        display: flex;
+    }
+
     &__logo {
-        padding: 23px 0px 0px 249px;
+        padding: 23px 0px 0px 0px;
     }
 
     &__menu {
         width: 412px;
         display: flex;
         //justify-content: space-between;
-        padding: 24px 0px 0px 451px;
+        padding: 24px 0px 0px 0px;
+        margin-left: 450px;
     }
     
     &__word {
@@ -108,9 +127,9 @@ body, html {
 //-----------------------------------------------------------------------
 
 .about {
-    max-width: 940px;
     min-height: 344px;
     margin: 59px auto 0px;
+
     &__title {
         position: relative;
         width: 124px;
@@ -213,10 +232,8 @@ body, html {
 //-----------------------------------------------------------------------
 
 .services {
-    max-width: 940px;
     min-height: 446px;
     margin: 117px auto 0px;
-    //padding-top: 117px;
 
     &__block-up {
         display: flex;
@@ -338,7 +355,7 @@ body, html {
 //-----------------------------------------------------------------------
 
 .work {
-    height: 499px;
+    min-height: 498px;
     background-image: url(../img/work-bg.jpg);
     margin-top: 115px;
 
@@ -364,12 +381,13 @@ body, html {
 //-----------------------------------------------------------------------
 
 .signup {
-    height: 100px;
+    min-height: 100px;
     background-color: #171819;
-    display: flex;
-
-    position: relative;
-    top: -1px;
+    
+    &__wrap {
+        display: flex;
+        min-height: 100px;
+    }
 
     &__title {
         width: 218px;
@@ -380,14 +398,14 @@ body, html {
         text-align: center;
         letter-spacing: 0.846154px;
         color: #FFFFFF;
-        margin: 39px 0px 0px 378px;
+        margin: 39px 0px 0px 127px;
         
     }
 
     &__form {
         display: flex;
         align-items: center;
-        margin-left: 68px;
+        margin-left: 69px;
     }
 
     &__email {
@@ -438,67 +456,50 @@ body, html {
 //-----------------------------------------------------------------------
 
 .footer {
-    height: 299px;
-    position: relative;
-    top: -1px;
-    &__block-one {
-        height: 239px;
+    min-height: 239px;
+    background-color: #141A20;
+
+    &__wrap {
         display: flex;
         background-color: #141A20;
     }
 
-    &__block-two {
-        height: 60px;
-        background-color: #171819;
-
-        font-family: 'Open Sans', sans-serif;
-        font-size: 11px;
-        line-height: 15px;
-        letter-spacing: 0.846154px;
-        color: #FFFFFF;
-
-        padding: 21px 0px 0px 571.5px;
-    }
-}
-.block-one {
-
     &__company {
         width: 250px;
         height: 148px;
-        margin: 43px 0px 0px 249px;
+        margin: 44px 0px 0px 0px;
     }
 
     &__links {
         width: 262px;
         height: 150px;
-        margin: 43px 0px 0px 71.5px;
+        margin: 44px 0px 0px 70px;
     }
 
     &__contact {
         width: 142px;
         height: 158px;
-        margin: 43px 0px 0px 58px;
+        margin: 44px 0px 0px 58px;
     }
 
     &__socials {
         width: 88px;
         height: 13px;
-        margin: 71px 0px 0px 45px;
+        margin: 72px 0px 0px 45px;
     }
 }
 .company {
-
     &__title {
         font-family: 'Open Sans', sans-serif;
         font-size: 11px;
         letter-spacing: 0.846154px;
         color: #FFFFFF;
         text-transform: uppercase;
-        padding-left: 1px;
+        
     }
 
     &__img {
-        padding-top: 21px;
+        margin-top: 21px;
     }
 
     &__subtitle {
@@ -507,11 +508,11 @@ body, html {
         line-height: 19px;
         letter-spacing: 0.85px;
         color: #FFFFFF;
-        padding: 15px 0px 0px 1px;
+        margin-top: 15px;
+        
     }
 }
 .links {
-
     &__title {
         font-family: 'Open Sans', sans-serif;
         font-size: 11px;
@@ -555,7 +556,6 @@ body, html {
     }
 }
 .contact {
-
     &__title {
         font-family: 'Open Sans', sans-serif;
         font-size: 11px;
@@ -598,6 +598,22 @@ body, html {
     }
 }
 
+
+//-----------------------------------------------------------------------
+
+.copyright {
+    min-height: 59px;
+    background-color: #171819;
+    &__text {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 11px;
+        line-height: 15px;
+        letter-spacing: 0.846154px;
+        color: #FFFFFF;
+
+        padding: 22px 0px 0px 321px;
+    }
+}
 
 
 

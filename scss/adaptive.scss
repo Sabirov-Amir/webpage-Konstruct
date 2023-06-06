@@ -1,8 +1,192 @@
 
+// ------------------------------------------------------------ 992 
 @media (max-width: 992px) {
     .container {
         max-width: 720px;
         margin: 0 auto;
         padding: 0 15px;
+        box-sizing: content-box;
     }
+    .header {
+        min-height: 768px;
+        background-image: url(../img/header-bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        &__logo {
+            display: block;
+            width: 103px;
+            padding: 40px 0px 0px 0px;
+            margin: 0px auto;
+        }
+    
+        &__text-center {
+            width: 612px;
+            height: 94px;
+            text-align: center;
+            margin: 311px 0px 0px 70px;
+            
+            h1 {
+                font-family: 'Bebas Neue', cursive;
+                font-weight: 400;
+                font-size: 60px;
+                letter-spacing: 5.70937px;
+                color: #FFFFFF;
+            }
+            p {
+                width: 390px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                font-size: 16px;
+                color: #FFFFFF;
+                margin: 8px 0px 0px 105px;
+            }
+        }
+    
+        &__text-down {
+            width: 120px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 3.7px;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            margin: 216px 0px 0px 308px;
+        }
+    }
+    // ----------------------------- header done
+    
 }
+
+
+// ------------------------------------------------------------ 768 
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+        margin: 0 auto;
+        padding: 0 15px;
+        box-sizing: content-box;
+    }
+    .header {
+        min-height: 620px;
+        background-image: url(../img/header-bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        &__logo {
+            display: block;
+            width: 103px;
+            padding: 30px 0px 0px 0px;
+            margin: 0px auto;
+        }
+    
+        &__text-center {
+            width: 540px;
+            height: 94px;
+            text-align: center;
+            margin: 220px 0px 0px 10px;
+            
+            h1 {
+                font-family: 'Bebas Neue', cursive;
+                font-weight: 400;
+                font-size: 60px;
+                letter-spacing: 5.70937px;
+                color: #FFFFFF;
+            }
+            p {
+                width: 390px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                font-size: 14px;
+                color: #FFFFFF;
+                margin: 8px auto 0px;
+            }
+        }
+    
+        &__text-down {
+            width: 120px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 11px;
+            letter-spacing: 3.7px;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            margin: 180px 0px 0px 216px;
+        }
+    }
+    // ----------------------------- header done
+}
+
+// ------------------------------------------------------------ 576
+
+@media (max-width: 576px) {
+    .container {
+        max-width: none;
+        margin: 0 auto;
+        padding: 0 15px;
+        box-sizing: content-box;
+    }
+    .header {
+        min-height: 380px;
+        background-image: url(../img/header-bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        &__logo {
+            display: block;
+            width: 90px;
+            padding: 12px 0px 0px 0px;
+            margin: 0px auto;
+            position: relative;
+            left: 8px;
+            img {
+                width: 80px;
+                height: 20px;
+            }
+        }
+    
+        &__text-center {
+            width: 244px;
+            height: 94px;
+            text-align: center;
+            margin: 110px auto 0px;
+            position: relative;
+            left: 12px;
+            h1 {
+                font-family: 'Bebas Neue', cursive;
+                font-weight: 400;
+                font-size: 40px;
+                letter-spacing: 5.6px;
+                color: #FFFFFF;
+            }
+            p {
+                width: 200px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                font-size: 11px;
+                letter-spacing: 1.1px;
+                color: #FFFFFF;
+                margin: 8px auto 0px;
+            }
+        }
+    
+        &__text-down {
+            width: 120px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 8px;
+            letter-spacing: 3.5px;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            margin: 100px auto 0px;
+            position: relative;
+            left: 14px;
+        }
+    }
+    // ----------------------------- header done
+}
+

@@ -283,7 +283,7 @@ body, html {
 }
 
 .button {
-    // Этот блок принадлежит трем кнопкам 
+    // Этот блок принадлежит двум кнопкам 
     width: 150px;
     height: 40px;
     a {
@@ -429,10 +429,9 @@ body, html {
     }
 
     &__button {
-        position: relative;
-        left: -1px;
+        
         input {
-            width: 150px;
+            width: 149px;
             height: 40px;
             background-color: #00A4E5;
     
@@ -617,7 +616,4 @@ body, html {
         padding: 22px 0px 0px 321px;
     }
 }
-
-
-
 

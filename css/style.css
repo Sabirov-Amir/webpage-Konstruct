@@ -434,12 +434,8 @@ body, html {
   border: 1px solid #979797;
   padding: 0px 0px 0px 16px;
 }
-.signup__button {
-  position: relative;
-  left: -1px;
-}
 .signup__button input {
-  width: 150px;
+  width: 149px;
   height: 40px;
   background-color: #00A4E5;
   display: flex;

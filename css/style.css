@@ -373,6 +373,9 @@ body, html {
 .work {
   min-height: 498px;
   background-image: url(../img/work-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-top: 115px;
 }
 .work__title {

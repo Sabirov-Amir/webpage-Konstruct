@@ -1,5 +1,6 @@
 
-// ------------------------------------------------------------ 992 
+// -------------------------------------------------------------------------- 992 
+
 @media (max-width: 992px) {
     .container {
         max-width: 720px;
@@ -7,6 +8,9 @@
         padding: 0 15px;
         box-sizing: content-box;
     }
+
+    // ----------------------------- header 992 - done
+
     .header {
         min-height: 768px;
         background-image: url(../img/header-bg.jpg);
@@ -46,21 +50,175 @@
     
         &__text-down {
             width: 120px;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 600;
-            font-size: 11px;
-            letter-spacing: 3.7px;
-            color: #FFFFFF;
-            text-transform: uppercase;
-            margin: 216px 0px 0px 308px;
+            margin: 216px 0px 0px 300px;
+            a {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                font-size: 11px;
+                letter-spacing: 3.7px;
+                color: #FFFFFF;
+                text-transform: uppercase;
+            }
         }
     }
-    // ----------------------------- header done
+
+    // ----------------------------- navbar 992 - done
+
+    .navbar {
+        min-height: 63px;
+        border-top: 1px solid #E6E6E6;
+        border-bottom: 1px solid #E6E6E6;
+        box-sizing: content-box;
+    
+        &__wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 23px;
+        }
+    
+        &__logo {
+            padding-top: 0;
+        }
+    
+        &__menu {
+            width: 412px;
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: 0px;
+            padding-top: 0px;
+        }
+        
+        &__word {
+            a {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                font-size: 12px;
+                letter-spacing: 1.09091px;
+                color: #48555B;
+                text-transform: uppercase;
+            }
+    
+            &_b {
+                a {
+                    color: #00A4E5;
+                }
+            }
+        }
+    }
+
+    // ----------------------------- about 992 - done
+
+    .about {
+        min-height: 306px;
+        margin: 40px auto 0px;
+        
+    
+        &__title {
+            position: relative;
+            width: 124px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 2.30625px;
+            color: #48555B;
+            text-transform: uppercase;
+            margin: 0 auto;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 33px;
+                left: 35px;
+                width: 52px;
+                height: 2px;
+                background-color: #00A4E5;
+            }
+        }
+    
+        &__block-bot {
+            margin: 66px 0px 0px 0px;
+        }
+    }
+    .block-bot {
+        display: flex;
+    
+        &__subtitle {
+            width: 330px;
+            flex: 0 0 330px;
+    
+            h2 {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: 0.1875px;
+                color: #48555B;
+                //padding: 75px 0px 0px 0px;
+                span {
+                    color: #16ACE8;
+                }
+            }
+    
+            p {
+                padding-top: 22px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 18px;
+                letter-spacing: 0.1875px;
+                color: #48555B;
+            }
+        }
+    
+        &__columns {
+            width: 380px;
+            height: 180px;
+            display: flex;
+            flex: 0 0 380px;
+            margin: 35px 0px 0px 20px;
+        }
+    
+        &__column {
+            width: 110px;
+            height: 180px;
+    
+            &_one {
+                background-image: url(../img/about-img-one.png);
+                background-repeat: no-repeat;
+                background-size: 110px 180px;
+                margin-right: 10px;
+            }
+    
+            &_two {
+                background-image: url(../img/about-img-two.png);
+                background-repeat: no-repeat;
+                background-size: 110px 180px;
+                margin-right: 10px;
+            }
+    
+            &_three {
+                background-image: url(../img/about-img-three.png);
+                background-repeat: no-repeat;
+                background-size: 110px 180px;
+            }
+        }
+    
+        &__text {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 22px;
+            letter-spacing: 0.1875px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            padding: 15px 0px 0px 14px;
+        }
+    }
     
 }
 
-
-// ------------------------------------------------------------ 768 
+// -------------------------------------------------------------------------- 768
 
 @media (max-width: 768px) {
     .container {
@@ -69,6 +227,9 @@
         padding: 0 15px;
         box-sizing: content-box;
     }
+
+    // ----------------------------- header 768 - done
+
     .header {
         min-height: 620px;
         background-image: url(../img/header-bg.jpg);
@@ -108,19 +269,81 @@
     
         &__text-down {
             width: 120px;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 600;
-            font-size: 11px;
-            letter-spacing: 3.7px;
-            color: #FFFFFF;
-            text-transform: uppercase;
-            margin: 180px 0px 0px 216px;
+            margin: 180px 0px 0px 210px;
+            a { 
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                font-size: 11px;
+                letter-spacing: 3.7px;
+                color: #FFFFFF;
+                text-transform: uppercase;
+            }
         }
     }
-    // ----------------------------- header done
+
+    // ----------------------------- navbar 768 - done
+
+    .navbar {
+        min-height: 63px;
+        border-top: 1px solid #E6E6E6;
+        border-bottom: 1px solid #E6E6E6;
+        box-sizing: content-box;
+    
+        &__wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 23px;
+        }
+    
+        &__logo {
+            padding-top: 0;
+        }
+    
+        &__menu {
+            width: 370px;
+            display: flex;
+            margin-left: 0px;
+            padding-top: 0px;
+        }
+        
+        &__word {
+            a {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                font-size: 12px;
+                letter-spacing: 1.09091px;
+                color: #48555B;
+                text-transform: uppercase;
+            }
+    
+            &_b {
+                a {
+                    color: #00A4E5;
+                }
+            }
+
+            &:nth-child(1) {
+                margin-right: 26px;
+            }
+            &:nth-child(2) {
+                margin-right: 30px;
+            }
+            &:nth-child(3) {
+                margin-right: 26px;
+            }
+            &:nth-child(4) {
+                margin-right: 24px;
+            }
+
+        }
+    }
+
+    // ----------------------------- about 768 - 
+
 }
 
-// ------------------------------------------------------------ 576
+// -------------------------------------------------------------------------- 576
 
 @media (max-width: 576px) {
     .container {
@@ -129,8 +352,11 @@
         padding: 0 15px;
         box-sizing: content-box;
     }
+
+    // ----------------------------- header 576 - done
+
     .header {
-        min-height: 380px;
+        min-height: 350px;
         background-image: url(../img/header-bg.jpg);
         background-position: center;
         background-repeat: no-repeat;
@@ -139,13 +365,13 @@
         &__logo {
             display: block;
             width: 90px;
-            padding: 12px 0px 0px 0px;
+            padding: 11px 0px 0px 0px;
             margin: 0px auto;
             position: relative;
             left: 8px;
             img {
-                width: 80px;
-                height: 20px;
+                width: 70px;
+                height: 18px;
             }
         }
     
@@ -153,9 +379,9 @@
             width: 244px;
             height: 94px;
             text-align: center;
-            margin: 110px auto 0px;
+            margin: 100px auto 0px;
             position: relative;
-            left: 12px;
+            left: 8px;
             h1 {
                 font-family: 'Bebas Neue', cursive;
                 font-weight: 400;
@@ -176,17 +402,85 @@
     
         &__text-down {
             width: 120px;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 600;
-            font-size: 8px;
-            letter-spacing: 3.5px;
-            color: #FFFFFF;
-            text-transform: uppercase;
-            margin: 100px auto 0px;
+            margin: 84px auto 0px;
             position: relative;
-            left: 14px;
+            left: 16px;
+            a {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                font-size: 7px;
+                letter-spacing: 3.5px;
+                color: #FFFFFF;
+                text-transform: uppercase;
+            }  
         }
     }
-    // ----------------------------- header done
+
+    // ----------------------------- navbar 576 - done
+
+    .navbar {
+        min-height: 46px;
+        border-top: 1px solid #E6E6E6;
+        border-bottom: 1px solid #E6E6E6;
+        box-sizing: content-box;
+    
+        &__wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+    
+        &__logo {
+            display: none;
+            padding-top: 0;
+            img {
+                width: 70px;
+                height: 18px;
+            }
+        }
+    
+        &__menu {
+            width: 320px;
+            display: flex;
+            //justify-content: space-between;
+            margin-left: 0px;
+        }
+        
+        &__word {
+            a {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                font-size: 11px;
+                letter-spacing: 1.09091px;
+                color: #48555B;
+                text-transform: uppercase;
+            }
+    
+            &_b {
+                a {
+                    color: #00A4E5;
+                }
+            }
+
+            &:nth-child(1) {
+                margin-right: 8px;
+            }
+            &:nth-child(2) {
+                margin-right: 8px;
+            }
+            &:nth-child(3) {
+                margin-right: 8px;
+            }
+            &:nth-child(4) {
+                margin-right: 8px;
+            }
+
+        }
+    }
+
+    // ----------------------------- about 576 - 
+
 }
 

@@ -284,7 +284,7 @@ body, html {
 }
 
 .button {
-    // Этот блок принадлежит двум кнопкам 
+    // Этот блок принадлежит трем кнопкам 
     width: 150px;
     height: 40px;
     a {
@@ -345,6 +345,109 @@ body, html {
         letter-spacing: 0.1875px;
         color: #48555B;
         padding: 14px 0px 0px 22px;
+    }
+}
+
+//-----------------------------------------------------------------------
+
+.work {
+    min-height: 498px;
+    background-image: url(../img/work-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 115px;
+
+    &__title {
+        width: 350px;
+        height: 72px;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: 0.15px;
+        color: #48555B;
+        margin: 0px auto;
+        padding-top: 120.5px;
+    }
+
+    &__button {
+       margin: 106px auto 0px;
+    }
+}
+
+//-----------------------------------------------------------------------
+
+.signup {
+    min-height: 100px;
+    background-color: #171819;
+    
+    &__wrap {
+        display: flex;
+        min-height: 100px;
+    }
+
+    &__title {
+        width: 218px;
+        height: 30px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        text-align: center;
+        letter-spacing: 0.846154px;
+        color: #FFFFFF;
+        margin: 39px 0px 0px 127px;
+        
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+        margin-left: 69px;
+    }
+
+    &__email {
+        width: 250px;
+        height: 40px;
+
+        input {
+            width: 250px;
+            height: 40px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            letter-spacing: 0.07px;
+            color: #48555B;
+            background: #FFFFFF;
+            border: 1px solid #979797;
+            padding: 0px 0px 0px 16px;
+        }
+    }
+
+    &__button {
+        
+        input {
+            width: 150px;
+            height: 40px;
+            background-color: #00A4E5;
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 18px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            
+            &:hover {
+                background-color: #0087bc;
+                cursor: pointer;
+            }
+        }
     }
 }
 

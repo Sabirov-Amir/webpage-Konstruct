@@ -6,7 +6,7 @@
     box-sizing: content-box;
   }
   .header {
-    min-height: 768px;
+    min-height: 720px;
     background-image: url(../img/header-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -15,14 +15,14 @@
   .header__logo {
     display: block;
     width: 103px;
-    padding: 40px 0px 0px 0px;
+    padding: 36px 0px 0px 0px;
     margin: 0px auto;
   }
   .header__text-center {
     width: 612px;
     height: 94px;
     text-align: center;
-    margin: 311px 0px 0px 70px;
+    margin: 270px 0px 0px 70px;
   }
   .header__text-center h1 {
     font-family: "Bebas Neue", cursive;
@@ -372,6 +372,129 @@
     background-color: #0087bc;
     cursor: pointer;
   }
+  .footer {
+    min-height: 238px;
+    background-color: #141A20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__wrap {
+    width: 720px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #141A20;
+  }
+  .footer__company {
+    width: 200px;
+    height: 150px;
+  }
+  .footer__links {
+    width: 226px;
+    height: 150px;
+  }
+  .footer__contact {
+    width: 110px;
+    height: 150px;
+  }
+  .footer__socials {
+    width: 76px;
+    height: 13px;
+  }
+  .company__title {
+    margin-left: -1px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+  .company__img {
+    margin-top: 23px;
+  }
+  .company__subtitle {
+    font-family: "Open Sans", sans-serif;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.85px;
+    color: #FFFFFF;
+    margin-top: 14px;
+  }
+  .links__title {
+    margin-left: -1px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+  .links__block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  .links__column:nth-child(1) {
+    width: 78px;
+  }
+  .links__column:nth-child(2) {
+    width: 52px;
+  }
+  .links__column:nth-child(3) {
+    width: 62px;
+  }
+  .links__word a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 25px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+  .contact__title {
+    margin-left: -1px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+  .contact__block {
+    font-family: "Open Sans";
+    font-size: 10px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+    margin-top: 18px;
+  }
+  .contact__where {
+    line-height: 15px;
+  }
+  .contact__number {
+    padding-top: 16px;
+  }
+  .contact__email {
+    padding-top: 20px;
+  }
+  .socials {
+    margin-top: 34px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .copyright {
+    min-height: 60px;
+    background-color: #171819;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .copyright__text {
+    height: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -381,7 +504,7 @@
     box-sizing: content-box;
   }
   .header {
-    min-height: 620px;
+    min-height: 650px;
     background-image: url(../img/header-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -416,7 +539,7 @@
   }
   .header__text-down {
     width: 120px;
-    margin: 180px 0px 0px 210px;
+    margin: 220px 0px 0px 210px;
   }
   .header__text-down a {
     font-family: "Open Sans", sans-serif;
@@ -774,6 +897,131 @@
     background-color: #0087bc;
     cursor: pointer;
   }
+  .footer {
+    min-height: 220px;
+    background-color: #141A20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__wrap {
+    width: 540px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #141A20;
+  }
+  .footer__company {
+    width: 146px;
+    height: 150px;
+  }
+  .footer__links {
+    width: 176px;
+    height: 150px;
+  }
+  .footer__contact {
+    width: 102px;
+    height: 150px;
+  }
+  .footer__socials {
+    width: 14px;
+    height: 120px;
+  }
+  .company__title {
+    margin-left: -1px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+  .company__img {
+    margin-top: 23px;
+  }
+  .company__subtitle {
+    font-family: "Open Sans", sans-serif;
+    font-size: 9px;
+    line-height: 16px;
+    letter-spacing: 0.85px;
+    color: #FFFFFF;
+    margin-top: 14px;
+  }
+  .links__title {
+    margin-left: -1px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+  .links__block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  .links__column:nth-child(1) {
+    width: 65px;
+  }
+  .links__column:nth-child(2) {
+    width: 44px;
+  }
+  .links__column:nth-child(3) {
+    width: 52px;
+  }
+  .links__word a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 26px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+  .contact__title {
+    margin-left: -1px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+  .contact__block {
+    font-family: "Open Sans";
+    font-size: 9px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+    margin-top: 16px;
+  }
+  .contact__where {
+    line-height: 16px;
+  }
+  .contact__number {
+    padding-top: 16px;
+  }
+  .contact__email {
+    padding-top: 20px;
+  }
+  .socials {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .copyright {
+    min-height: 56px;
+    background-color: #171819;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .copyright__text {
+    height: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -1130,7 +1378,7 @@
     margin: 80px auto 0px;
   }
   .signup {
-    min-height: 140px;
+    min-height: 156px;
     background-color: #171819;
   }
   .signup__wrap {
@@ -1139,15 +1387,15 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    padding-top: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   .signup__title {
-    width: 170px;
+    width: 180px;
     height: 20px;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     letter-spacing: 0.846154px;
     color: #FFFFFF;
@@ -1157,14 +1405,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 8px auto 0px;
+    margin: 13px auto 0px;
   }
   .signup__email {
-    width: 220px;
+    width: 200px;
     height: 40px;
   }
   .signup__email input {
-    width: 220px;
+    width: 200px;
     height: 40px;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
@@ -1175,10 +1423,10 @@
     padding: 0px 0px 0px 16px;
   }
   .signup__button {
-    margin-top: 5px;
+    margin-top: 7px;
   }
   .signup__button input {
-    width: 220px;
+    width: 200px;
     height: 40px;
     background-color: #00A4E5;
     display: flex;
@@ -1195,5 +1443,144 @@
   .signup__button input:hover {
     background-color: #0087bc;
     cursor: pointer;
+  }
+  .footer {
+    min-height: 590px;
+    background-color: #141A20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__wrap {
+    width: 300px;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #141A20;
+  }
+  .footer__company {
+    width: 300px;
+    height: 122px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__links {
+    width: 300px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__contact {
+    width: 300px;
+    height: 148px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__socials {
+    width: 80px;
+    height: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+  .company__title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+  .company__img {
+    width: 102px;
+    margin-top: 23px auto 0px;
+  }
+  .company__subtitle {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 9px;
+    line-height: 16px;
+    letter-spacing: 0.85px;
+    color: #FFFFFF;
+    margin-top: 14px;
+  }
+  .links__title {
+    height: 14px;
+    margin: 0px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+  .links__block {
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  .links__column:nth-child(1) {
+    width: 65px;
+  }
+  .links__column:nth-child(2) {
+    width: 44px;
+  }
+  .links__column:nth-child(3) {
+    width: 52px;
+  }
+  .links__word a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 22px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+  .contact__title {
+    margin-left: 0px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+  .contact__block {
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 9px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+    margin-top: 16px;
+  }
+  .contact__where {
+    line-height: 16px;
+  }
+  .contact__number {
+    padding-top: 16px;
+  }
+  .contact__email {
+    padding-top: 20px;
+  }
+  .copyright {
+    min-height: 50px;
+    background-color: #171819;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .copyright__text {
+    text-align: center;
+    width: 180px;
+    height: 24px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
   }
 }

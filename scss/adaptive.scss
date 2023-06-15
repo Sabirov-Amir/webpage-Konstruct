@@ -483,14 +483,16 @@
             height: 13px;
         }
     }
+    .title {
+        margin-left: -1px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 11px;
+        letter-spacing: 0.846154px;
+        color: #FFFFFF;
+        text-transform: uppercase; 
+    }
     .company {
-        &__title {
-            margin-left: -1px;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 11px;
-            letter-spacing: 0.846154px;
-            color: #FFFFFF;
-            text-transform: uppercase;  
+        &__title {   
         }
     
         &__img {
@@ -509,12 +511,6 @@
     }
     .links {
         &__title {
-            margin-left: -1px;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 11px;
-            letter-spacing: 0.846154px;
-            color: #FFFFFF;
-            text-transform: uppercase;
         }
     
         &__block {
@@ -550,12 +546,6 @@
     }
     .contact {
         &__title {
-            margin-left: -1px;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 11px;
-            letter-spacing: 0.846154px;
-            color: #FFFFFF;
-            text-transform: uppercase;
         }
     
         &__block {
@@ -1122,14 +1112,16 @@
             height: 120px;
         }
     }
+    .title {
+        margin-left: -1px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 11px;
+        letter-spacing: 0.846154px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
     .company {
-        &__title {
-            margin-left: -1px;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 11px;
-            letter-spacing: 0.846154px;
-            color: #FFFFFF;
-            text-transform: uppercase;  
+        &__title {  
         }
     
         &__img {
@@ -1148,12 +1140,6 @@
     }
     .links {
         &__title {
-            margin-left: -1px;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 11px;
-            letter-spacing: 0.846154px;
-            color: #FFFFFF;
-            text-transform: uppercase;
         }
     
         &__block {
@@ -1189,12 +1175,6 @@
     }
     .contact {
         &__title {
-            margin-left: -1px;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 11px;
-            letter-spacing: 0.846154px;
-            color: #FFFFFF;
-            text-transform: uppercase;
         }
     
         &__block {
@@ -1749,40 +1729,48 @@
     // ----------------------------- footer 576 - done (should do spoiler)
 
     .footer {
-        min-height: 590px;
+        min-height: 160px;
         background-color: #141A20;
         display: flex;
         justify-content: center;
         align-items: center;
-    
+
         &__wrap {
             width: 300px;
-            height: 520px;
+            height: initial;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             background-color: #141A20;
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
         &__company {
+            position: relative;
+            top: 0;
+            left: 0;
             width: 300px;
-            height: 122px;
+            height: initial;
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 0px 10px 10px 10px;
         }
         &__links {
             width: 300px;
-            height: 140px;
+            height: initial;
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 10px;
         }
         &__contact {
-            width: 300px;
-            height: 148px;
+            width: 300px; 
+            height: initial;
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 10px;
         }
         &__socials {
             width: 80px;
@@ -1791,21 +1779,55 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
-            margin: 0 auto;
+            margin: 10px auto 0px;
+        }
+        &__spoiler {
+            height: 0;
+            overflow: hidden;
+            transition-duration: 500ms;
+        }
+    }
+    .title {
+        position: relative;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        letter-spacing: 0.846154px;
+        color: #FFFFFF;
+        text-transform: uppercase; 
+
+        padding-left: 20px;
+        cursor: pointer;
+
+        &:before {
+            content: "";
+            width: 8px;
+            height: 1px;
+            background-color: #FFFFFF;
+            position: absolute;
+            top: 7px;
+
+            transform: rotate(40deg);
+            left: 0px;
+        }
+        &:after {
+            content: "";
+            width: 8px;
+            height: 1px;
+            background-color: #FFFFFF;
+            position: absolute;
+            top: 7px;
+
+            transform: rotate(-40deg);
+            left: 6px;
         }
     }
     .company {
         &__title {
-            font-family: 'Open Sans', sans-serif;
-            font-size: 14px;
-            letter-spacing: 0.846154px;
-            color: #FFFFFF;
-            text-transform: uppercase;  
         }
     
         &__img {
             width: 102px;
-            margin-top: 23px auto 0px;
+            margin: 23px auto 0px;
         }
     
         &__subtitle {
@@ -1819,15 +1841,47 @@
             
         }
     }
+    .contentBox.active {
+        .footer__spoiler {
+            &_com {
+                height: 110px;
+            }
+            &_lin {
+                height: 120px;
+            }
+            &_con {
+                height: 140px;
+            }
+        }
+    }
+    .contentBox.active {
+        .title {
+            &:before {
+                content: "";
+                width: 8px;
+                height: 1px;
+                background-color: #FFFFFF;
+                position: absolute;
+                top: 7px;
+    
+                transform: rotate(-40deg);
+                left: 0px;
+            }
+            &:after {
+                content: "";
+                width: 8px;
+                height: 1px;
+                background-color: #FFFFFF;
+                position: absolute;
+                top: 7px;
+    
+                transform: rotate(40deg);
+                left: 6px;
+            }
+        }
+    }
     .links {
         &__title {
-            height: 14px;
-            margin: 0px;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 14px;
-            letter-spacing: 0.846154px;
-            color: #FFFFFF;
-            text-transform: uppercase;
         }
     
         &__block {
@@ -1864,12 +1918,6 @@
     }
     .contact {
         &__title {
-            margin-left: 0px;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 14px;
-            letter-spacing: 0.846154px;
-            color: #FFFFFF;
-            text-transform: uppercase;
         }
     
         &__block {
@@ -1918,4 +1966,11 @@
         }
     }
 }
+
+
+
+
+
+
+
 

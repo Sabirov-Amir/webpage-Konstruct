@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*------------------ обнуляющий список ----------------------*/
 body, html {
-  height: 100px;
+  height: 100%;
 }
 
 .container {
@@ -484,7 +484,7 @@ body, html {
   height: 13px;
 }
 
-.company__title {
+.title {
   margin-left: -1px;
   font-family: "Open Sans", sans-serif;
   font-size: 11px;
@@ -492,6 +492,7 @@ body, html {
   color: #FFFFFF;
   text-transform: uppercase;
 }
+
 .company__img {
   margin-top: 23px;
 }
@@ -504,14 +505,6 @@ body, html {
   margin-top: 15px;
 }
 
-.links__title {
-  margin-left: -1px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 11px;
-  letter-spacing: 0.846154px;
-  color: #FFFFFF;
-  text-transform: uppercase;
-}
 .links__block {
   display: flex;
   justify-content: space-between;
@@ -536,14 +529,6 @@ body, html {
   text-transform: uppercase;
 }
 
-.contact__title {
-  margin-left: -1px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 11px;
-  letter-spacing: 0.846154px;
-  color: #FFFFFF;
-  text-transform: uppercase;
-}
 .contact__block {
   font-family: "Open Sans";
   font-size: 11px;

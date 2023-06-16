@@ -1413,7 +1413,7 @@
     cursor: pointer;
   }
   .footer {
-    min-height: 160px;
+    min-height: 130px;
     background-color: #141A20;
     display: flex;
     justify-content: center;
@@ -1426,19 +1426,15 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: #141A20;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 15px 0px;
   }
   .footer__company {
-    position: relative;
-    top: 0;
-    left: 0;
     width: 300px;
     height: initial;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px 10px 10px 10px;
+    padding-bottom: 15px;
   }
   .footer__links {
     width: 300px;
@@ -1446,7 +1442,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding-bottom: 15px;
   }
   .footer__contact {
     width: 300px;
@@ -1454,7 +1450,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding-bottom: 15px;
   }
   .footer__socials {
     width: 80px;
@@ -1463,7 +1459,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 10px auto 0px;
+    margin: 0px auto;
   }
   .footer__spoiler {
     height: 0;
@@ -1500,6 +1496,21 @@
     transform: rotate(-40deg);
     left: 6px;
   }
+  .contentBox.active .footer__spoiler_com {
+    height: 110px;
+  }
+  .contentBox.active .footer__spoiler_lin {
+    height: 120px;
+  }
+  .contentBox.active .footer__spoiler_con {
+    height: 140px;
+  }
+  .contentBox.active .title:before {
+    transform: rotate(-40deg);
+  }
+  .contentBox.active .title:after {
+    transform: rotate(40deg);
+  }
   .company__img {
     width: 102px;
     margin: 23px auto 0px;
@@ -1512,35 +1523,6 @@
     letter-spacing: 0.85px;
     color: #FFFFFF;
     margin-top: 14px;
-  }
-  .contentBox.active .footer__spoiler_com {
-    height: 110px;
-  }
-  .contentBox.active .footer__spoiler_lin {
-    height: 120px;
-  }
-  .contentBox.active .footer__spoiler_con {
-    height: 140px;
-  }
-  .contentBox.active .title:before {
-    content: "";
-    width: 8px;
-    height: 1px;
-    background-color: #FFFFFF;
-    position: absolute;
-    top: 7px;
-    transform: rotate(-40deg);
-    left: 0px;
-  }
-  .contentBox.active .title:after {
-    content: "";
-    width: 8px;
-    height: 1px;
-    background-color: #FFFFFF;
-    position: absolute;
-    top: 7px;
-    transform: rotate(40deg);
-    left: 6px;
   }
   .links__block {
     width: 240px;

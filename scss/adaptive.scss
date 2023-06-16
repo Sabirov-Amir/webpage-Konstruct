@@ -1726,10 +1726,10 @@
         }
     }
 
-    // ----------------------------- footer 576 - done (should do spoiler)
+    // ----------------------------- footer 576 - done (spoiler is finished)
 
     .footer {
-        min-height: 160px;
+        min-height: 130px;
         background-color: #141A20;
         display: flex;
         justify-content: center;
@@ -1742,19 +1742,15 @@
             flex-direction: column;
             justify-content: space-between;
             background-color: #141A20;
-            padding-top: 20px;
-            padding-bottom: 20px;
+            padding: 15px 0px;
         }
         &__company {
-            position: relative;
-            top: 0;
-            left: 0;
             width: 300px;
             height: initial;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 0px 10px 10px 10px;
+            padding-bottom: 15px;
         }
         &__links {
             width: 300px;
@@ -1762,7 +1758,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 10px;
+            padding-bottom: 15px;
         }
         &__contact {
             width: 300px; 
@@ -1770,7 +1766,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 10px;
+            padding-bottom: 15px;
         }
         &__socials {
             width: 80px;
@@ -1779,7 +1775,7 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
-            margin: 10px auto 0px;
+            margin: 0px auto;
         }
         &__spoiler {
             height: 0;
@@ -1821,6 +1817,28 @@
             left: 6px;
         }
     }
+
+    .contentBox.active .footer__spoiler {
+        &_com {
+            height: 110px;
+        }
+        &_lin {
+            height: 120px;
+        }
+        &_con {
+            height: 140px;
+        }
+    }
+
+    .contentBox.active .title {
+        &:before {
+            transform: rotate(-40deg);
+        }
+        &:after {
+            transform: rotate(40deg);
+        }
+    }
+
     .company {
         &__title {
         }
@@ -1841,45 +1859,7 @@
             
         }
     }
-    .contentBox.active {
-        .footer__spoiler {
-            &_com {
-                height: 110px;
-            }
-            &_lin {
-                height: 120px;
-            }
-            &_con {
-                height: 140px;
-            }
-        }
-    }
-    .contentBox.active {
-        .title {
-            &:before {
-                content: "";
-                width: 8px;
-                height: 1px;
-                background-color: #FFFFFF;
-                position: absolute;
-                top: 7px;
-    
-                transform: rotate(-40deg);
-                left: 0px;
-            }
-            &:after {
-                content: "";
-                width: 8px;
-                height: 1px;
-                background-color: #FFFFFF;
-                position: absolute;
-                top: 7px;
-    
-                transform: rotate(40deg);
-                left: 6px;
-            }
-        }
-    }
+
     .links {
         &__title {
         }
@@ -1892,7 +1872,6 @@
         }
     
         &__column {
-
             &:nth-child(1) {
                 width: 65px;   
             }
@@ -1916,6 +1895,7 @@
             }
         }
     }
+
     .contact {
         &__title {
         }
@@ -1932,20 +1912,19 @@
         &__where {
             line-height: 16px;
         }
-    
         &__number {
             padding-top: 16px;
         }
-    
         &__email {
             padding-top: 20px;
         }
     }
+
     .socials {
-    
         &__img {
         }
     }
+
 
     // ----------------------------- copyright 576 - done
 

@@ -1647,9 +1647,12 @@
     // ----------------------------- signup 576 - done
 
     .signup {
-        min-height: 156px;
+        min-height: 160px;
         background-color: #171819;
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         &__wrap {
             min-height: 90px;
             display: flex;
@@ -1695,6 +1698,7 @@
                 background: #FFFFFF;
                 border: 1px solid #979797;
                 padding: 0px 0px 0px 16px;
+                border-radius: 0px; // в телефоне показывает радиус, хотя его нет, поэтому напишу пока так для проверки
             }
         }
     
@@ -1705,7 +1709,8 @@
                 width: 200px;
                 height: 40px;
                 background-color: #00A4E5;
-        
+                border-radius: 0px; // в телефоне показывает радиус, хотя его нет, поэтому напишу пока так для проверки
+                
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -1729,7 +1734,7 @@
     // ----------------------------- footer 576 - done (spoiler is finished)
 
     .footer {
-        min-height: 130px;
+        min-height: 140px;
         background-color: #141A20;
         display: flex;
         justify-content: center;
@@ -1742,7 +1747,7 @@
             flex-direction: column;
             justify-content: space-between;
             background-color: #141A20;
-            padding: 15px 0px;
+            padding: 20px 0px;
         }
         &__company {
             width: 300px;
@@ -1750,7 +1755,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-bottom: 15px;
+            padding-bottom: 18px;
         }
         &__links {
             width: 300px;
@@ -1758,7 +1763,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-bottom: 15px;
+            padding-bottom: 18px;
         }
         &__contact {
             width: 300px; 
@@ -1766,10 +1771,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-bottom: 15px;
+            padding-bottom: 18px;
         }
         &__socials {
-            width: 80px;
+            width: 90px;
             height: 13px;
             display: flex;
             flex-direction: row;
@@ -1781,6 +1786,7 @@
             height: 0;
             overflow: hidden;
             transition-duration: 500ms;
+            transition-timing-function: ease-in-out;
         }
     }
     .title {

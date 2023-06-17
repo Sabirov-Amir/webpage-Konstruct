@@ -1346,8 +1346,11 @@
     margin: 80px auto 0px;
   }
   .signup {
-    min-height: 156px;
+    min-height: 160px;
     background-color: #171819;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .signup__wrap {
     min-height: 90px;
@@ -1389,6 +1392,7 @@
     background: #FFFFFF;
     border: 1px solid #979797;
     padding: 0px 0px 0px 16px;
+    border-radius: 0px;
   }
   .signup__button {
     margin-top: 7px;
@@ -1397,6 +1401,7 @@
     width: 200px;
     height: 40px;
     background-color: #00A4E5;
+    border-radius: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1413,7 +1418,7 @@
     cursor: pointer;
   }
   .footer {
-    min-height: 130px;
+    min-height: 140px;
     background-color: #141A20;
     display: flex;
     justify-content: center;
@@ -1426,7 +1431,7 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: #141A20;
-    padding: 15px 0px;
+    padding: 20px 0px;
   }
   .footer__company {
     width: 300px;
@@ -1434,7 +1439,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 15px;
+    padding-bottom: 18px;
   }
   .footer__links {
     width: 300px;
@@ -1442,7 +1447,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 15px;
+    padding-bottom: 18px;
   }
   .footer__contact {
     width: 300px;
@@ -1450,10 +1455,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 15px;
+    padding-bottom: 18px;
   }
   .footer__socials {
-    width: 80px;
+    width: 90px;
     height: 13px;
     display: flex;
     flex-direction: row;
@@ -1465,6 +1470,7 @@
     height: 0;
     overflow: hidden;
     transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
   }
   .title {
     position: relative;

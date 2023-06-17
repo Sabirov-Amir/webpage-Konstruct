@@ -159,6 +159,7 @@ body, html {
         margin: 69px 0px 0px 0px;
     }
 }
+
 .block-bot {
     display: flex;
 
@@ -244,6 +245,7 @@ body, html {
         justify-content: space-between;
     }
 }
+
 .block-up {
     min-height: 40px;
 
@@ -484,6 +486,7 @@ body, html {
         height: 13px;
     }
 }
+
 .title {
     margin-left: -1px;
     font-family: 'Open Sans', sans-serif;
@@ -492,6 +495,7 @@ body, html {
     color: #FFFFFF;
     text-transform: uppercase; 
 }
+
 .company {
     &__title { 
     }
@@ -510,6 +514,7 @@ body, html {
         
     }
 }
+
 .links {
     &__title {
     }
@@ -545,6 +550,7 @@ body, html {
         }
     }
 }
+
 .contact {
     &__title {
     }
@@ -569,6 +575,7 @@ body, html {
         padding-top: 20px;
     }
 }
+
 .socials {
     margin-top: 34px;
     display: flex;

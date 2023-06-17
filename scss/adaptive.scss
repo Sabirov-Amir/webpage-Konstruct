@@ -113,7 +113,6 @@
         min-height: 285px;
         margin: 40px auto 0px;
         
-    
         &__title {
             position: relative;
             width: 124px;
@@ -140,6 +139,7 @@
             margin: 50px 0px 0px 0px;
         }
     }
+
     .block-bot {
         display: flex;
         justify-content: space-between;
@@ -231,6 +231,7 @@
             justify-content: space-between;
         }
     }
+
     .block-up {
         min-height: 45px;
     
@@ -483,6 +484,7 @@
             height: 13px;
         }
     }
+    
     .title {
         margin-left: -1px;
         font-family: 'Open Sans', sans-serif;
@@ -491,6 +493,7 @@
         color: #FFFFFF;
         text-transform: uppercase; 
     }
+
     .company {
         &__title {   
         }
@@ -509,6 +512,7 @@
             
         }
     }
+
     .links {
         &__title {
         }
@@ -544,6 +548,7 @@
             }
         }
     }
+
     .contact {
         &__title {
         }
@@ -568,6 +573,7 @@
             padding-top: 20px;
         }
     }
+
     .socials {
         margin-top: 34px;
         display: flex;
@@ -750,6 +756,7 @@
             margin: 50px auto 0px;
         }
     }
+
     .block-bot {
         display: flex;
         flex-direction: column;
@@ -850,6 +857,7 @@
         }
 
     }
+
     .block-up {
         max-width: 540px;
         min-height: 108px;
@@ -1049,6 +1057,7 @@
                 background: #FFFFFF;
                 border: 1px solid #979797;
                 padding: 0px 0px 0px 16px;
+                border-radius: 0px; 
             }
         }
     
@@ -1058,6 +1067,7 @@
                 width: 150px;
                 height: 40px;
                 background-color: #00A4E5;
+                border-radius: 0px; 
         
                 display: flex;
                 justify-content: center;
@@ -1112,6 +1122,7 @@
             height: 120px;
         }
     }
+
     .title {
         margin-left: -1px;
         font-family: 'Open Sans', sans-serif;
@@ -1120,6 +1131,7 @@
         color: #FFFFFF;
         text-transform: uppercase;
     }
+
     .company {
         &__title {  
         }
@@ -1138,6 +1150,7 @@
             
         }
     }
+
     .links {
         &__title {
         }
@@ -1173,6 +1186,7 @@
             }
         }
     }
+
     .contact {
         &__title {
         }
@@ -1197,6 +1211,7 @@
             padding-top: 20px;
         }
     }
+
     .socials {
         margin-top: 30px;
         display: flex;
@@ -1395,6 +1410,7 @@
             margin: 38px auto 0px;
         }
     }
+
     .block-bot {
         display: flex;
         flex-direction: column;
@@ -1491,6 +1507,7 @@
         }
 
     }
+
     .block-up {
         max-width: 300px;
         min-height: 98px;
@@ -1698,7 +1715,7 @@
                 background: #FFFFFF;
                 border: 1px solid #979797;
                 padding: 0px 0px 0px 16px;
-                border-radius: 0px; // в телефоне показывает радиус, хотя его нет, поэтому напишу пока так для проверки
+                border-radius: 0px; 
             }
         }
     
@@ -1709,7 +1726,7 @@
                 width: 200px;
                 height: 40px;
                 background-color: #00A4E5;
-                border-radius: 0px; // в телефоне показывает радиус, хотя его нет, поэтому напишу пока так для проверки
+                border-radius: 0px; 
                 
                 display: flex;
                 justify-content: center;
@@ -1789,6 +1806,7 @@
             transition-timing-function: ease-in-out;
         }
     }
+    
     .title {
         position: relative;
         font-family: 'Open Sans', sans-serif;
@@ -1951,11 +1969,3 @@
         }
     }
 }
-
-
-
-
-
-
-
-
